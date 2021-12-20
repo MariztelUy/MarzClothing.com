@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+ 
+ 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: gold;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  font-size: 17px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: white;}
+#Men {background-color: white;}
+#Women {background-color: white;}
+#Sale {background-color: white;}
+#About Us {background-color: white;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'white')">Home</button>
+<button class="tablink" onclick="openPage('Men', this, 'white')" id="defaultOpen">Men</button>
+<button class="tablink" onclick="openPage('Women', this, 'white')">Women</button>
+<button class="tablink" onclick="openPage('Sale', this, 'white')">Sale</button>
+<button class="tablink" onclick="openPage('About Us', this, 'white')">About Us</button>
+<div id="Home" class="tabcontent">
+     <body>
+<center>
+<img src="logo.png" alt="Snow" style="width:140px">
+</center>
+ <center>
+  <h3>MARZ CLOTHING</h3>
+  <p>WE PROMISE COMFORT</p><br><br><br>
+  </center>
+</body>
+     <style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+.container {
+  position: relative;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+<body>
+ 
+ <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+ 
+ <body>
+<center>
+<video width="900" height="700" controls>
+  <source src="VID1.mp4" type="video/mp4">
+   <source src="movie.ogg" type="video/ogg">
+</video>
+</center>
+</body>
+ 
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="poster1.png" alt="poster1" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="poster2.png" alt="poster2" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="poster3.png" alt="poster3" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+
+<h2 style="text-align:center"></h2>
+
+<div class="container">
+    <center>
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="bag1.png" style="width:50%">
+    </center>
+  </div>
+
+  <div class="mySlides">
+    <center>
+    <div class="numbertext">2 / 6</div>
+    <img src="Sandal2.png" style="width:50%">
+    </center>
+  </div>
+
+  <div class="mySlides">
+    <center>
+    <div class="numbertext">3 / 6</div>
+    <img src="bag2.png" style="width:50%">
+    </center>
+  </div>
+    
+  <div class="mySlides">
+    <center>
+    <div class="numbertext">4 / 6</div>
+    <img src="sandal4.png" style="width:50%">
+    </center>
+  </div>
+
+  <div class="mySlides">
+    <center>
+    <div class="numbertext">5 / 6</div>
+    <img src="bag3.png" style="width:50%">
+    </center>
+  </div>
+    
+  <div class="mySlides">
+    <center>
+    <div class="numbertext">6 / 6</div>
+    <img src="sandal7.png" style="width:50%">
+    </center>
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="bag1.png" style="width:100%" onclick="currentSlide(1)" alt="BAGS">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Sandal2.png" style="width:100%" onclick="currentSlide(2)" alt="SANDALS">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="bag2.png" style="width:100%" onclick="currentSlide(3)" alt="BAGS">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sandal4.png" style="width:100%" onclick="currentSlide(4)" alt="SANDALS">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="bag3.png" style="width:100%" onclick="currentSlide(5)" alt="BAGS">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="sandal7.png" style="width:100%" onclick="currentSlide(6)" alt="SANDALS">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div id="Men" class="tabcontent">
+    <body>
+<center>
+<img src="logo.png" alt="Snow" style="width:140px">
+</center>
+ <center>
+  <h3>MARZ CLOTHING</h3>
+  <p>WE PROMISE COMFORT</p><br><br><br>
+  </center>
+</body>
+      <h2>Men's Clothing</h2>
+   <p>T-shirts & Polo's</p>
+  <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  
+   <div class="column">
+    <img src="shirt5.png" alt="T-shirts & Polo's" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="shirt6.png" alt="T-shirts & Polo's" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="shirt8.png" alt="T-shirts & Polo's" style="width:100%">
+  </div>
+   
+  </div><br><br>
+  
+  <div class="row">
+  
+  <p>Shoes</p>
+  <div class="column">
+    <img src="aming4.png" alt="Shoes" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="aming2.png" alt="Shoes" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="aming3.png" alt="Shoes" style="width:100%">
+  </div>
+ 
+
+ </div><br><br>
+ 
+ <div class="row">
+  
+  <p>Shorts</p>
+  <div class="column">
+    <img src="short16.png" alt="Shorts" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="short15.png" alt="Shorts" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="short18.png" alt="Shorts" style="width:100%">
+  </div>
+ 
+
+ </div><br><br>
+ 
+ <div class="row">
+  <p>Bags</p>
+  <div class="column">
+    <img src="SLING1.png" alt="Bags" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="SLING2.png" alt="Bags" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="SLING3.png" alt="Bags" style="width:100%">
+  </div>
+
+</div>
+
+</body> 
+</div>
+
+
+
+
+<div id="Women" class="tabcontent">
+     <body>
+<center>
+<img src="logo.png" alt="Snow" style="width:140px">
+</center>
+ <center>
+  <h3>MARZ CLOTHING</h3>
+  <p>WE PROMISE COMFORT</p><br><br><br>
+  </center>
+</body>
+  <h2>Women's Clothing</h2>
+<p>Shirt</p>
+  <head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <img src="girl1.png" alt="Shirt" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="girl2.png" alt="Shirt" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="girl3.png" alt="Shirt" style="width:100%">
+  </div>
+ 
+ 
+  <p>Sandals</p>
+  <div class="column">
+    <img src="Sandal2.png" alt="Sandals" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sandal4.png" alt="Sandals" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sandal7.png" alt="Sandals" style="width:100%">
+  </div>
+  
+  
+  <p>Bags</p>
+  <div class="column">
+    <img src="bag1.png" alt="Bags" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="bag2.png" alt="Bags" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="bag3.png" alt="Bags" style="width:100%">
+  </div>
+   
+</div>
+
+
+</body>
+</div>
+
+
+
+
+<div id="Sale" class="tabcontent">
+     <body>
+<center>
+<img src="logo.png" alt="Snow" style="width:140px">
+</center>
+</body>
+      <center>
+  <h3>MARZ CLOTHING</h3>
+  <p>WE PROMISE COMFORT</p><br><br><br>
+  </center>
+  
+  <h3>FLASH SALE</h3>
+
+  <body>
+
+<h2>10% Discount</h2>
+
+<div class="row">
+    
+  <div class="column">
+    <img src="sandal2.png" alt="10% Discount" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sandal4.png" alt="10% Discount" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sandal7.png" alt="10% Discount" style="width:100%">
+  </div>
+   </div>
+
+<h2>12% Discount</h2>
+       
+       <div class="column">
+    <img src="shirt5.png" alt="12% Discount" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="short15.png" alt="12% Discount" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="aming2.png" alt="12% Discount" style="width:100%">
+  </div>
+   </div>
+       
+</div>
+
+
+
+
+<div id="About Us" class="tabcontent">
+     <body>
+<center>
+<img src="logo.png" alt="Snow" style="width:140px">
+</center>
+<center>
+  <h3>MARZ CLOTHING</h3>
+  <p>WE PROMISE COMFORT</p><br><br><br>
+  </center>
+</body>
+  <h3>About Us</h3>
+  
+  <center>
+  <div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="MARZ CLOTHING MISSION.png" alt="MISSION" style="width:100%">
+      <h3>MISSION</h3>
+      <p>OUR MISSION IS TO INSPIRE AND CONNECT WITH OUR CUSTOERS TO PUT BEST SELVES FORWARD EVERY DAY AND TO PROVIDE WHAT YOU WILL LOVE TO WEAR!<br><BR>
+      MARZ CLOTHING OFFERS MEN'S & WOMEN'S CLOTHING, SHOES & ACESSORIES</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="MARZ2.png" alt="DROPPING AREAS" style="width:100%">
+      <h3>DROPPING AREAS</h3>
+      <p>WE TRANSFER AROUND LA UNION<br><br>
+      WE SHIP NATIONWIDE THRU JRS / J&T </p>
+    </div>
+  </div> <br><br><br><br><br><br><br>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Social Media </h2>
+
+<a href="https://web.facebook.com/MarzClothings/about/?ref=page_internal" class="fa fa-facebook"></a>
+<a href="https://www.instagram.com/marzclothing21/" class="fa fa-instagram"></a>
+
+</body>
+</div>
+  
+</div>
+  </center>
+  
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+   
+   
+</body>
+  
+</html> 
